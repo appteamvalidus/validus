@@ -2,9 +2,30 @@
 <html>
 
 <head>
-    <title>W3.CSS Template</title>
+    <title>VALIDUS | TEAMVALIDUS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Register for Validus trade. Please complete your profile below. By completing this form, I give consent to the Back Office." />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="canonical" href="https://hyip-review.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VALIDUS | TEAMVALIDUS" />
+    <meta property="og:description"
+        content="Register for VALIDUS trade. Please complete your profile below. By completing this form, I give consent to the Back Office." />
+    <meta property="og:url" content="https://hyip-review.com/" />
+    <meta property="og:site_name" content="NOVATECH" />
+    <meta property="og:updated_time" content="2022-06-12T00:03:05+00:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VALIDUS | TEAMVALIDUS" />
+    <meta name="twitter:description"
+        content="Register for VALIDUS trade. Please complete your profile below. By completing this form, I give consent to the Back Office." />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="join.haverd@gmail.com" />
+    <meta name="twitter:label2" content="Time to read" />
+    <meta name="twitter:data2" content="1 minute" />
+    <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,20 +59,21 @@
 
         /* First image (Logo. Full height) */
         .bgimg-1 {
-            background-image: url('/img/offering.jpg');
+            background-image: url('./img/background.jpg');
             min-height: 100%;
+            opacity: 0.8;
         }
 
         /* Second image (Portfolio) */
         .bgimg-2 {
-            background-image: url("/img/parallax2.jpg");
+            background-image: url("./img/parallax2.jpg");
             min-height: 400px;
         }
 
         /* Third image (Contact) */
         .bgimg-3 {
-            background-image: url("/img/parallax3.jpg");
-            min-height: 400px;
+            background-image: url("./img/Validus-Newyork-Trading.jpg");
+            min-height: 200px;
         }
 
         .w3-wide {
@@ -84,11 +106,19 @@
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="/" class="w3-bar-item w3-button">VALIDUS</a>
+
+            <a href="/#home" class="w3-bar-item w3-button"><img style="width: 30px;"
+                    src="./img/valid_us_navbar.png" />Validus</a>
             <a href="/#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRIVACY POLICY</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="#" class="w3-border w3-bar-item w3-button w3-hide-small w3-right w3-red w3-hover-blue">
+            <a href="/#levels" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-anchor"
+                    aria-hidden="true"></i>
+                LEVELS</a>
+            <a href="/#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>
+                CONTACT</a>
+            <a class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRIVACY
+                POLICY</a>
+            <a id="btn-register-now"
+                class="w3-border w3-bar-item w3-button w3-hide-small w3-right w3-red w3-hover-blue">
                 REGISTER NOW
                 <i class="fa fa-solid fa-user-plus"> </i>
             </a>
@@ -96,16 +126,17 @@
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+            <a href="/#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="/#levels" class="w3-bar-item w3-button" onclick="toggleFunction()">LEVELS</a>
+            <a href="/#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a class="w3-bar-item w3-button" onclick="toggleFunction()">PRIVACY POLICY</a>
+            <a id="btn-register-now-small" href="#" class="w3-bar-item w3-button">REGISTER NOW</a>
         </div>
     </div>
 
-    <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h1 class="w3-center">Privacy Policy</h1>
+        <a id="link1" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
         <p>Last updated: July 03, 2022</p>
         <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
             information when You use the Service and tells You about Your privacy rights and how the law protects You.
@@ -166,6 +197,7 @@
                 </p>
             </li>
         </ul>
+        <a id="link2" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
         <h1>Collecting and Using Your Personal Data</h1>
         <h2>Types of Data Collected</h2>
         <h3>Personal Data</h3>
@@ -197,6 +229,7 @@
             unique device identifiers and other diagnostic data.</p>
         <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the
             Service by or through a mobile device.</p>
+        <a id="link3" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
         <h3>Tracking Technologies and Cookies</h3>
         <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain
             information. Tracking technologies used are beacons, tags, and scripts to collect and track information and
@@ -248,6 +281,7 @@
         </ul>
         <p>For more information about the cookies we use and your choices regarding cookies, please visit our Cookies
             Policy or the Cookies section of our Privacy Policy.</p>
+        <a id="link8" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
         <h2>Use of Your Personal Data</h2>
         <p>The Company may use Personal Data for the following purposes:</p>
         <ul>
@@ -310,6 +344,7 @@
             <li><strong>With Your consent</strong>: We may disclose Your personal information for any other purpose with
                 Your consent.</li>
         </ul>
+        <a id="link4" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
         <h2>Retention of Your Personal Data</h2>
         <p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this
             Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal
@@ -346,6 +381,7 @@
             <li>Protect the personal safety of Users of the Service or the public</li>
             <li>Protect against legal liability</li>
         </ul>
+        <a id="link5" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
         <h2>Security of Your Personal Data</h2>
         <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the
             Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable
@@ -371,26 +407,16 @@
             effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
         <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
             are effective when they are posted on this page.</p>
+        <a id="link6" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
         <h1>Contact Us</h1>
         <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-        <ul>
-            <li>
-                <p>By email: support@teamvalidus.com</p>
-            </li>
-            <li>
-                <p>By visiting this page on our website: <a href="https://teamvalidus.com/"
-                        rel="external nofollow noopener" target="_blank">https://teamvalidus.com/</a></p>
-            </li>
-            <li>
-                <p>By mail: https://teamvalidus.com/</p>
-            </li>
-        </ul>
+        <a id="link7" class="w3-center w3-text-red"> VALIDUS OFFICIAL TRADING ACADEMY</a>
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
+        <a id="link9" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section" onclick="onClick(this)">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
             <i class="fa fa-instagram w3-hover-opacity"></i>
             <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -398,17 +424,24 @@
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                class="w3-hover-text-green">w3.css</a></p>
     </footer>
 
     <script>
+        var url = "https://app.teamvalidus.com/auth/signup/teamvalidusadmin";
+        document.getElementById("link1").href = url;
+        document.getElementById("link2").href = url;
+        document.getElementById("link3").href = url;
+        document.getElementById("link4").href = url;
+        document.getElementById("link5").href = url;
+        document.getElementById("link6").href = url;
+        document.getElementById("link7").href = url;
+        document.getElementById("link8").href = url;
+        document.getElementById("link9").href = url;
+
+
         // Modal Image Gallery
         function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
+            location.href = url;
         }
 
         // Change style of navbar on scroll
